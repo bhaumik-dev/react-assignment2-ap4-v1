@@ -1,0 +1,257 @@
+/* Global reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1rem = 10px */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: #f7f7f7;
+  font-family: "Rethink-Sans", sans-serif;
+}
+
+h1,
+h2 {
+  color: #111111;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 4rem;
+  font-weight: 700;
+}
+
+/* Employee Table styles */
+
+.employee-table-container {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin: 4rem 4rem 1.8rem 4rem;
+  font-weight: 600;
+}
+
+.employee-table {
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 4rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 2rem;
+  border: 1px solid #ddd;
+}
+
+.employee-table tr {
+  color: #313131;
+  background-color: #f5f5f5;
+}
+
+.employee-table th {
+  background-color: #2e2e2e;
+  color: #fefefe;
+  text-align: left;
+  font-weight: 600;
+}
+
+.employee-table tbody tr.even-row {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: #fefefe;
+}
+
+.employee-table tbody tr:hover {
+  background-color: rgba(0, 0, 255, 0.6);
+  color: #fefefe;
+}
+
+/* Styling Employee Create Page */
+
+.container {
+  max-width: 70%;
+  padding: 4rem;
+  margin: 2rem 4rem 2rem 4rem;
+  border: 1px solid #313131;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.form-group {
+  margin-bottom: 2.4rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: rgba(0, 86, 179, 0.8);
+  color: #fefefe;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(0, 86, 179, 1);
+}
+
+/* Side bar code */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  color: #fefefe;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+.sidebar ul li a:hover {
+  color: #111;
+}
+
+/* Navabr Styling */
+
+.navbar {
+  background-color: #222;
+  padding: 10px 20px;
+  width: calc(100% - 200px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+  color: #ccc;
+}
+
+/* Styling Employee Details page/data */
+
+.employee-details-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 70%;
+  border: 1px solid #111;
+  margin: 4rem 4rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.employee-details-container div,
+.employee-details-container button,
+.employee-details-container h2 {
+  margin-left: 4rem;
+}
+
+.employee-details-container button {
+  width: 30%;
+  background-color: rgba(0, 86, 179, 0.8);
+  color: #fefefe;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1.4rem;
+}
+
+.employee-details-container button:hover {
+  background-color: rgba(0, 86, 179, 1);
+}
+
+.employee-details-container button:last-child {
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  background-color: rgba(229, 229, 229, 0.8);
+  color: #111;
+}
+
+.employee-details-container button:last-child:hover {
+  background-color: rgba(229, 229, 229, 1);
+  color: #111;
+}
+
+/* Update page styles */
+
+#updateButton {
+  width: 20%;
+  background-color: rgba(0, 86, 179, 0.8);
+  color: #fefefe;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1.4rem;
+}
+
+.employee-details-container select {
+  padding: 1rem;
+  margin-left: 1rem;
+}
